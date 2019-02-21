@@ -1,0 +1,72 @@
+exports.seed = function(knex, Promise) {
+  // Deletes ALL existing entries
+  return knex("recipes-ingredients")
+    .del()
+    .then(function() {
+      // Inserts seed entries
+      return knex("recipes-ingredients").insert([
+        { recipe_id: 1, ingredient_id: 1, quantity: "2 teaspoons" },
+        { recipe_id: 1, ingredient_id: 2, quantity: "1 cup" },
+        { recipe_id: 1, ingredient_id: 3, quantity: "3 cups" },
+        { recipe_id: 1, ingredient_id: 4, quantity: "1 tablespoon" },
+        { recipe_id: 1, ingredient_id: 5, quantity: "1 tablespoon" },
+        { recipe_id: 1, ingredient_id: 6, quantity: "1 teaspoon" },
+        { recipe_id: 1, ingredient_id: 7, quantity: "1" },
+        { recipe_id: 1, ingredient_id: 8, quantity: "1 tablespoon" },
+        { recipe_id: 1, ingredient_id: 9, quantity: "1 can, diced" },
+        { recipe_id: 1, ingredient_id: 10, quantity: "1/2 small, chopped" },
+        { recipe_id: 1, ingredient_id: 11, quantity: "1 1/4 cups" },
+        { recipe_id: 1, ingredient_id: 12, quantity: "1/2 cup" },
+        { recipe_id: 1, ingredient_id: 13, quantity: "1/2 cup" },
+        { recipe_id: 2, ingredient_id: 2, quantity: "1 1/3 cups" },
+        { recipe_id: 2, ingredient_id: 1, quantity: "2 1/4 teaspoons" },
+        { recipe_id: 2, ingredient_id: 8, quantity: "1/4 cup" },
+        { recipe_id: 2, ingredient_id: 14, quantity: "2 teaspoons" },
+        { recipe_id: 2, ingredient_id: 6, quantity: "1 1/2 teaspoons" },
+        { recipe_id: 2, ingredient_id: 15, quantity: "1/2 cup" },
+        { recipe_id: 2, ingredient_id: 3, quantity: "3 3/4 cups" },
+        { recipe_id: 2, ingredient_id: 16, quantity: "4 oz" },
+        { recipe_id: 2, ingredient_id: 11, quantity: "8 oz" },
+        { recipe_id: 2, ingredient_id: 17, quantity: "1 pound" },
+        { recipe_id: 2, ingredient_id: 23, quantity: "2 oz" },
+        { recipe_id: 3, ingredient_id: 14, quantity: "2 tablespoons" },
+        { recipe_id: 3, ingredient_id: 39, quantity: "3 tablespoons, minced" },
+        { recipe_id: 3, ingredient_id: 18, quantity: "2 tablespoons" },
+        { recipe_id: 3, ingredient_id: 19, quantity: "1 teaspoon" },
+        { recipe_id: 3, ingredient_id: 23, quantity: "1 tablespoon" },
+        { recipe_id: 3, ingredient_id: 20, quantity: "2 cups" },
+        { recipe_id: 3, ingredient_id: 9, quantity: "1 cups" },
+        { recipe_id: 3, ingredient_id: 21, quantity: "4 oz" },
+        { recipe_id: 4, ingredient_id: 23, quantity: "1/2 cup" },
+        { recipe_id: 4, ingredient_id: 23, quantity: "1/2 cup" },
+        {
+          recipe_id: 4,
+          ingredient_id: 25,
+          quantity: "2 tablespoons, squeezed"
+        },
+        { recipe_id: 4, ingredient_id: 24, quantity: "2 oz" },
+        { recipe_id: 4, ingredient_id: 7, quantity: "1 white" },
+        { recipe_id: 4, ingredient_id: 22, quantity: "1 bunch" },
+        { recipe_id: 5, ingredient_id: 8, quantity: "3/4 cup" },
+        { recipe_id: 5, ingredient_id: 27, quantity: "1/4 cup" },
+        { recipe_id: 5, ingredient_id: 28, quantity: "1 cup, chopped" },
+        { recipe_id: 5, ingredient_id: 29, quantity: "1 cup, chopped" },
+        { recipe_id: 5, ingredient_id: 9, quantity: "1 cup, diced" },
+        { recipe_id: 5, ingredient_id: 30, quantity: "1/4 head" },
+        { recipe_id: 5, ingredient_id: 12, quantity: "1 cup" },
+        { recipe_id: 5, ingredient_id: 21, quantity: "4 oz" },
+        { recipe_id: 5, ingredient_id: 21, quantity: "4 oz" },
+        { recipe_id: 6, ingredient_id: 7, quantity: "1" },
+        { recipe_id: 6, ingredient_id: 34, quantity: "1/2 cup" },
+        { recipe_id: 6, ingredient_id: 35, quantity: "1/2 cup" },
+        { recipe_id: 6, ingredient_id: 36, quantity: "1, juiced" },
+        { recipe_id: 6, ingredient_id: 37, quantity: "1, minced" },
+        { recipe_id: 6, ingredient_id: 5, quantity: "1/2 teaspoon" },
+        { recipe_id: 6, ingredient_id: 27, quantity: "1/2 teaspoon" },
+        { recipe_id: 6, ingredient_id: 8, quantity: "1 quart, for frying" },
+        { recipe_id: 6, ingredient_id: 38, quantity: "1 pound" },
+        { recipe_id: 6, ingredient_id: 40, quantity: "1 pack" },
+        { recipe_id: 6, ingredient_id: 30, quantity: "1/2 medium head" }
+      ]);
+    });
+};
